@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: enCodeMoive - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/enCodeMoive.res" /d "_DEBUG" /d "_AFXDLL" "D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\enCodeMoive.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP23.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/enCodeMoive.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\enCodeMoive.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\enCodeMoiveDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP23.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/enCodeMoive.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP24.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/enCodeMoive.pdb" /debug /machine:I386 /out:"Debug/enCodeMoive.exe" /pdbtype:sept  .\Debug\enCodeMoive.obj .\Debug\enCodeMoiveDlg.obj .\Debug\StdAfx.obj .\Debug\enCodeMoive.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+enCodeMoive.cpp
+enCodeMoiveDlg.cpp
+D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\enCodeMoiveDlg.cpp(266) : warning C4018: '<' : signed/unsigned mismatch
+D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\enCodeMoiveDlg.cpp(324) : warning C4018: '<' : signed/unsigned mismatch
+D:\OtherWork\Xcarddrvs\KTV\Core\EncodeMoive\enCodeMoiveDlg.cpp(425) : warning C4018: '<' : signed/unsigned mismatch
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+enCodeMoive.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

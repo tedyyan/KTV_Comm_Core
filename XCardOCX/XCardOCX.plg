@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XCardOCX - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\includes" /I "D:\DXSDK\Include" /I "D:\DXSDK\Samples\C++\DirectShow\BaseClasses" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Debug/" /Fp"Debug/XCardOCX.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /EHsc /c 
+"Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44B.tmp" with contents
+[
+..\MoiveCommControl\Debug\MoiveControl.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/XCardOCX.pdb" /debug /machine:I386 /def:".\XCardOCX.def" /out:"c:\ktv\XCardOCX.ocx" /implib:"Debug/XCardOCX.lib" /pdbtype:sept 
+.\Debug\ClipDll.obj
+.\Debug\Com232.obj
+.\Debug\Comm.obj
+.\Debug\ini.obj
+.\Debug\MainProcess.obj
+.\Debug\OSDDll.obj
+.\Debug\SongDAO.obj
+.\Debug\StdAfx.obj
+.\Debug\XCardOCX.obj
+.\Debug\XCardOCXCtl.obj
+.\Debug\XCardOCXPpg.obj
+.\Debug\XCardOCX.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44B.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44C.bat" with contents
+[
+@echo off
+regsvr32 /s /c "c:\ktv\XCardOCX.ocx"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44C.bat"
+Compiling...
+MainProcess.cpp
+z:\projects\cui\core\xcardocx\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(199) : warning C4800: 'unsigned char' : forcing value to bool 'true' or 'false' (performance warning)
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(186) : warning C4101: 'count' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(219) : warning C4800: 'unsigned char' : forcing value to bool 'true' or 'false' (performance warning)
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(319) : warning C4800: 'unsigned char' : forcing value to bool 'true' or 'false' (performance warning)
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(571) : warning C4101: 'singerChannel' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(571) : warning C4101: 'volumeSong' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(570) : warning C4101: 'encode' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(571) : warning C4101: 'mpeg4flag' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(571) : warning C4101: 'volumeSinger' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(572) : warning C4101: 'hanflag' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(571) : warning C4101: 'songChannel' : unreferenced local variable
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(690) : warning C4018: '<' : signed/unsigned mismatch
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(296) : warning C4715: 'CMainProcess::songNext' : not all control paths return a value
+Z:\Projects\Cui\Core\XCardOCX\MainProcess.cpp(325) : warning C4700: local variable 'err' used without having been initialized
+Linking...
+   Creating library Debug/XCardOCX.lib and object Debug/XCardOCX.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP450.tmp" with contents
+[
+/nologo /o"Debug/XCardOCX.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\ClipDll.sbr
+.\Debug\Com232.sbr
+.\Debug\Comm.sbr
+.\Debug\ini.sbr
+.\Debug\MainProcess.sbr
+.\Debug\OSDDll.sbr
+.\Debug\SongDAO.sbr
+.\Debug\XCardOCX.sbr
+.\Debug\XCardOCXCtl.sbr
+.\Debug\XCardOCXPpg.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP450.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+XCardOCX.ocx - 0 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

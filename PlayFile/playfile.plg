@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: playfile - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/playfile.res" /d "_DEBUG" "D:\OtherWork\Xcarddrvs\KTV\Core\PlayFile\playfile.rc"" 
+Creating temporary file "D:\Profiles\bgfx63\LOCALS~1\Temp\RSP193.tmp" with contents
+[
+/nologo /MLd /W3 /ZI /Od /I "D:\DXSDK\Samples\C++\DirectShow\BaseClasses" /I "D:\dxsdk\include" /I "D:\OtherWork\300SDK\84xx DShow\Headers" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"D:\OtherWork\Xcarddrvs\KTV\Core\PlayFile\playfile.cpp"
+]
+Creating command line "cl.exe @D:\Profiles\bgfx63\LOCALS~1\Temp\RSP193.tmp" 
+Creating temporary file "D:\Profiles\bgfx63\LOCALS~1\Temp\RSP194.tmp" with contents
+[
+MFCS42D.LIB MFCO42D.LIB MFCD42D.LIB MFC42D.LIB libcmtd.lib strmbasd.lib kernel32.lib shell32.lib user32.lib gdi32.lib quartz.lib ole32.lib comdlg32.lib /nologo /subsystem:windows /pdb:none /debug /machine:I386 /nodefaultlib /out:"C:\projects\KTV\playfile.exe" 
+.\Debug\playfile.obj
+.\Debug\playfile.res
+]
+Creating command line "link.exe @D:\Profiles\bgfx63\LOCALS~1\Temp\RSP194.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+playfile.cpp
+d:\otherwork\xcarddrvs\ktv\core\playfile\playfile.cpp(25) : fatal error C1083: Cannot open include file: 'sdinterf.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+playfile.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,96 @@
+// XCardOCX.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (XCardOCX.tlb) that will become a resource in
+// XCardOCX.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(C022F970-ED5B-465E-AB15-23215570B80F), version(1.0),
+  helpfile("XCardOCX.hlp"),
+  helpstring("XCardOCX ActiveX Control module"),
+  control ]
+library XCARDOCXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CXCardOCXCtrl
+
+	[ uuid(42565790-05C5-40E4-9F1F-81CA90DCBE00),
+	  helpstring("Dispatch interface for XCardOCX Control"), hidden ]
+	dispinterface _DXCardOCX
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CXCardOCXCtrl)
+			[id(DISPID_READYSTATE), readonly] long ReadyState;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CXCardOCXCtrl)
+			[id(1)] VARIANT initAll();
+			[id(2)] VARIANT volumeUp();
+			[id(3)] VARIANT songAhead();
+			[id(4)] VARIANT songNext();
+			[id(5)] VARIANT songStop();
+			[id(6)] VARIANT songPause();
+			[id(7)] VARIANT songStart();
+			[id(8)] VARIANT volumeDown();
+			[id(9)] VARIANT serviceOn();
+			[id(10)] VARIANT serviceOff();
+			[id(11)] VARIANT singerOn();
+			[id(12)] VARIANT singerOff();
+			[id(13)] VARIANT songControl();
+			[id(14)] VARIANT exitCard();
+			[id(15)] VARIANT showSongNum();
+			[id(16)] VARIANT showSongN(BSTR* num);
+			[id(17)] VARIANT startZhangSheng();
+			[id(18)] VARIANT upAir();
+			[id(19)] VARIANT airDown();
+			[id(20)] VARIANT airUp();
+			[id(21)] VARIANT micUp();
+			[id(22)] VARIANT micDown();
+			[id(23)] VARIANT setSongP(BSTR* mypd);
+			[id(24)] VARIANT updateSLOSD(BSTR* songlist);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CXCardOCXCtrl
+
+	[ uuid(C512F5EA-C53E-4E04-BA55-6D64639318BD),
+	  helpstring("Event interface for XCardOCX Control") ]
+	dispinterface _DXCardOCXEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CXCardOCXCtrl)
+			[id(DISPID_READYSTATECHANGE)] void ReadyStateChange();
+			[id(1)] void RefreshGUI();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CXCardOCXCtrl
+
+	[ uuid(CA9CBE8B-698E-4CF9-A0C2-38D389C24B43),
+	  helpstring("XCardOCX Control"), control ]
+	coclass XCardOCX
+	{
+		[default] dispinterface _DXCardOCX;
+		[default, source] dispinterface _DXCardOCXEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

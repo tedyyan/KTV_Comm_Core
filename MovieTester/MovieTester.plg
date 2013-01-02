@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MovieTester - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/MovieTester.res" /d "_DEBUG" /d "_AFXDLL" "D:\OtherWork\Xcarddrvs\KTV\Core\MovieTester\MovieTester.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\includes" /I "d:\dxsdk\include" /I "D:\DXSDK\Samples\C++\DirectShow\BaseClasses" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MovieTester.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\ClipDll.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\Com232.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\Comm.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\MovieTester\MovieTester.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\MovieTester\MovieTesterDlg.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B9.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3BA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\includes" /I "d:\dxsdk\include" /I "D:\DXSDK\Samples\C++\DirectShow\BaseClasses" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MovieTester.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\OtherWork\Xcarddrvs\KTV\Core\MovieTester\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3BA.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3BB.tmp" with contents
+[
+..\MoiveCommControl\Debug\MoiveControl.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MovieTester.pdb" /debug /machine:I386 /out:"Debug/MovieTester.exe" /pdbtype:sept 
+.\Debug\ClipDll.obj
+.\Debug\Com232.obj
+.\Debug\Comm.obj
+.\Debug\MovieTester.obj
+.\Debug\MovieTesterDlg.obj
+.\Debug\SongDAO.obj
+.\Debug\StdAfx.obj
+.\Debug\MovieTester.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3BB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ClipDll.cpp
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\ClipDll.cpp(87) : warning C4800: 'unsigned char' : forcing value to bool 'true' or 'false' (performance warning)
+Com232.cpp
+Comm.cpp
+MovieTester.cpp
+d:\otherwork\xcarddrvs\ktv\core\movietester\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+MovieTesterDlg.cpp
+d:\otherwork\xcarddrvs\ktv\core\movietester\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+D:\OtherWork\Xcarddrvs\KTV\Core\MovieTester\MovieTesterDlg.cpp(311) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+SongDAO.cpp
+d:\otherwork\xcarddrvs\ktv\core\movietester\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(102) : warning C4244: '=' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(114) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(228) : warning C4244: '=' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(558) : warning C4244: '=' : conversion from 'short' to 'unsigned char', possible loss of data
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(492) : warning C4101: 'temp' : unreferenced local variable
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(689) : warning C4800: 'short' : forcing value to bool 'true' or 'false' (performance warning)
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(815) : warning C4101: 'var' : unreferenced local variable
+D:\OtherWork\Xcarddrvs\KTV\Core\XCardOCX\SongDAO.cpp(868) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+Generating Code...
+Linking...
+   Creating library Debug/MovieTester.lib and object Debug/MovieTester.exp
+Creating command line "bscmake.exe /nologo /o"Debug/MovieTester.bsc"  .\Debug\StdAfx.sbr .\Debug\ClipDll.sbr .\Debug\Com232.sbr .\Debug\Comm.sbr .\Debug\MovieTester.sbr .\Debug\MovieTesterDlg.sbr .\Debug\SongDAO.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MovieTester.exe - 0 error(s), 13 warning(s)
+</pre>
+</body>
+</html>

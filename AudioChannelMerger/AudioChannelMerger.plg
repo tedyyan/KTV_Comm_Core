@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AudioChannelMerger - Win32 Debug Unicode--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /Gz /MDd /W4 /Zi /Od /I "D:\DXSDK\Samples\C++\DirectShow\BaseClasses" /I "D:\DXSDK\Include" /D _WIN32_WINNT=0x0400 /D WINVER=0x0400 /D DBG=1 /D "DEBUG" /D "_DEBUG" /D "INC_OLE2" /D "STRICT" /D "_WIN32" /D "_MT" /D "_DLL" /D _X86_=1 /D "WIN32" /D "UNICODE" /D "_UNICODE" /FR"Debug_Unicode/" /Fp"Debug_Unicode/AudioChannelMerger.pch" /YX"streams.h" /Fo"Debug_Unicode/" /Fd"Debug_Unicode/" /Oid /c 
+"D:\OtherWork\Xcarddrvs\KTV\Core\AudioChannelMerger\AudioChannelMerger.cpp"
+"D:\OtherWork\Xcarddrvs\KTV\Core\AudioChannelMerger\AudioTransformFrameProp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F.tmp" with contents
+[
+D:\DXSDK\Samples\C++\DirectShow\BaseClasses\Debug\strmbasd.lib msvcrtd.lib quartz.lib vfw32.lib winmm.lib kernel32.lib advapi32.lib version.lib largeint.lib user32.lib gdi32.lib comctl32.lib ole32.lib olepro32.lib oleaut32.lib uuid.lib /nologo /stack:0x200000,0x200000 /dll /pdb:none /debug /machine:I386 /nodefaultlib /def:".\AudioChannelMerger.def" /out:"Debug_Unicode\AudioChannelMerger.ax" /implib:"Debug_Unicode/AudioChannelMerger.lib" /libpath:"..\..\..\..\lib" /debug:mapped,full /subsystem:windows,4.0 /ignore:4089 /ignore:4078 
+.\Debug_Unicode\AudioChannelMerger.obj
+.\Debug_Unicode\AudioTransformFrameProp.obj
+.\Debug_Unicode\AudioChannelMerger.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F.tmp"
+<h3>Output Window</h3>
+Compiling...
+AudioChannelMerger.cpp
+AudioTransformFrameProp.cpp
+Linking...
+   Creating library Debug_Unicode/AudioChannelMerger.lib and object Debug_Unicode/AudioChannelMerger.exp
+AudioChannelMerger.exp : warning LNK4070: /OUT:NullNull.Ax directive in .EXP differs from output filename "Debug_Unicode\AudioChannelMerger.ax"; ignoring directive
+AudioChannelMerger.obj : error LNK2001: unresolved external symbol "public: __thiscall CTransInPlaceFilter::CTransInPlaceFilter(unsigned short *,struct IUnknown *,struct _GUID const &,long *,bool)" (??0CTransInPlaceFilter@@QAE@PAGPAUIUnknown@@ABU_GUID@@PAJ_N@Z)
+AudioTransformFrameProp.obj : error LNK2001: unresolved external symbol "void __stdcall DbgAssert(unsigned short const *,unsigned short const *,int)" (?DbgAssert@@YGXPBG0H@Z)
+AudioTransformFrameProp.obj : error LNK2001: unresolved external symbol "public: __thiscall CBasePropertyPage::CBasePropertyPage(unsigned short *,struct IUnknown *,int,int)" (??0CBasePropertyPage@@QAE@PAGPAUIUnknown@@HH@Z)
+Debug_Unicode\AudioChannelMerger.ax : fatal error LNK1120: 3 unresolved externals
+Error executing link.exe.
+Creating command line "bscmake.exe /nologo /o"Debug_Unicode/AudioChannelMerger.bsc"  .\Debug_Unicode\AudioChannelMerger.sbr .\Debug_Unicode\AudioTransformFrameProp.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+AudioChannelMerger.ax - 4 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
